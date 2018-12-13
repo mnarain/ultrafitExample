@@ -1,9 +1,6 @@
 package com.qualogy.carribean.util;
 
-import com.qualogy.carribean.enums.UIEnums;
-
 import java.io.IOException;
-import java.util.Arrays;
 
 public class Util {
 
@@ -17,7 +14,4 @@ public class Util {
         } catch (IOException | InterruptedException ex) {}
     }
 
-    public static boolean existsValue(String value){
-        return Arrays.stream(UIEnums.values()).anyMatch(uiEnums -> value.equals(uiEnums.name()));
-    }
 }
